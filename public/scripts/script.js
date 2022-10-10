@@ -22,7 +22,7 @@ fetch('https://raw.githubusercontent.com/fnurhidayat/probable-garbanzo/main/data
         const filteredMotor = myJson.filter(function(el) {
             const filterTransmisi = filter.tanggal ? el.availableAt.substring(0,10) === filter.tanggal : true;
             const filterManufaktur = filter.jumlah_p ? el.capacity == filter.jumlah_p : true;
-            return filterTransmisi && filterManufaktur 
+            return filterTransmisi && filterManufaktur &&  el.available == true
         });
     
         table.renderBody(filteredMotor);
