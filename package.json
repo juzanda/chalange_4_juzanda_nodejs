@@ -1,0 +1,16 @@
+{
+  "name": "binar-fsw-challenge-04",
+  "version": "1.0.0",
+  "description": "Project HTTP Server dan DOM",
+  "main": "server/index.js",
+  "author": "Juzanda Hasnomo KH",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "nodemon server/index.js"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "nodemon": "^2.0.20"
+  }
+}
